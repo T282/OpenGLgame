@@ -1,0 +1,7 @@
+all: vatsal
+
+vatsal: game.cpp glad.c
+	g++ glad.c game.cpp -lGL -ldl -lglfw -L/usr/local/lib
+
+clean:
+	rm vatsal
